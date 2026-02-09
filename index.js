@@ -45,4 +45,8 @@ const fs=require('fs');
 //     }
 // });
 
-fs.appendFileSync('./it-a.txt',' and we are smart');
+// fs.appendFileSync('./it-a.txt',' and we are smart');
+
+fs.appendFile('./it-a.txt',' as well as intelligent',()=>{
+    console.log('Data appended successfully');
+});
