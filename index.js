@@ -52,6 +52,8 @@ const fs=require('fs');
 // });
 
 // fs.cpSync('./a1.txt','./b1.txt');
-fs.cp('./a1.txt','./b1.txt',()=>{
-    console.log('File copied successfully');
-});
+// fs.cp('./a1.txt','./b1.txt',()=>{
+//     console.log('File copied successfully');
+// });
+
+fs.unlinkSync('./b1.txt');
