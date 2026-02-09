@@ -28,8 +28,12 @@
 //     console.log('Server is listening on port 3000');
 // });
 
-const fs=require('fs');
-fs.writeFileSync('./it-a.txt','We are student of IT');
-fs.writeFileSync('./ABES.txt','We are student of ABES');
+// const fs=require('fs');
+// // fs.writeFileSync('./it-a.txt','We are student of IT');
+// // fs.writeFileSync('./ABES.txt','We are student of ABES');
+// const result=fs.readFileSync('./it-a.txt','utf-8');
+// console.log(result);
 
+const fs=require('fs');
+fs.writeFile('./it-a.txt','We are student of IT',()=>{});
 
