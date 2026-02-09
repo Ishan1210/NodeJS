@@ -51,4 +51,7 @@ const fs=require('fs');
 //     console.log('Data appended successfully');
 // });
 
-fs.cpSync('./a1.txt','./b1.txt');
+// fs.cpSync('./a1.txt','./b1.txt');
+fs.cp('./a1.txt','./b1.txt',()=>{
+    console.log('File copied successfully');
+});
