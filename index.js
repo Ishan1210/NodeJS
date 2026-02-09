@@ -36,11 +36,13 @@
 
 const fs=require('fs');
 // fs.writeFile('./it-a.txt','We are student of IT',()=>{});
-fs.readFile('./it-a.txt','utf-8',(err,result)=>{
-    if(err){
-        console.log(err);
-    }
-    else{
-        console.log(result);
-    }
-});
+// fs.readFile('./it-a.txt','utf-8',(err,result)=>{
+//     if(err){
+//         console.log(err);
+//     }
+//     else{
+//         console.log(result);
+//     }
+// });
+
+fs.appendFileSync('./it-a.txt',' and we are smart');
