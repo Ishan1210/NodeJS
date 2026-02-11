@@ -8,7 +8,7 @@ function Navbar() {
           src="https://th.bing.com/th/id/OIP._mVfeIz_M5OghcDn9HD8RgAAAA?w=121&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
           alt="Logo"
         />
-        <span>Assignment_1</span>
+        <span>Assignment_2</span>
       </div>
 
       <ul className="nav-links">
