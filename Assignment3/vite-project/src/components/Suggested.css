@@ -1,0 +1,13 @@
+.suggested-container {
+  padding: 20px;
+}
+
+.scroll-row {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.scroll-row::-webkit-scrollbar {
+  display: none;
+}
