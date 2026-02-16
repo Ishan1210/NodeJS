@@ -1,9 +1,9 @@
 import React from "react";
 import "./ProductCard.css";
 
-const ProductCard = ({ image, title, price, oldPrice, tag }) => {
+const ProductCard = ({ image, title, price, oldPrice, tag, onClick }) => {
   return (
-    <div className="card">
+    <div className="card" onClick={onClick}>
       <img src={image} alt={title} className="card-img" />
 
       <p className="card-title">{title}</p>
