@@ -1,0 +1,49 @@
+.card {
+  min-width: 180px;
+  background: #f3f3f3;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: white;
+}
+
+.card-title {
+  font-size: 14px;
+  margin: 8px 0;
+  color: #333;
+}
+
+.price-section {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 13px;
+}
+
+.tag {
+  color: green;
+  font-size: 13px;
+  margin-top: 5px;
+}
