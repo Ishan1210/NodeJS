@@ -34,7 +34,7 @@
 // const result=fs.readFileSync('./it-a.txt','utf-8');
 // console.log(result);
 
-const fs=require('fs');
+// const fs=require('fs');
 // fs.writeFile('./it-a.txt','We are student of IT',()=>{});
 // fs.readFile('./it-a.txt','utf-8',(err,result)=>{
 //     if(err){
@@ -56,4 +56,16 @@ const fs=require('fs');
 //     console.log('File copied successfully');
 // });
 
-fs.unlinkSync('./b1.txt');
+// fs.unlinkSync('./b1.txt');
+
+const http=require('http');
+const fs=require('fs');
+const myserver=http.createServer((req,res)=>{
+    console.log('server1');
+    res.end('Hello from server1');
+});
+myserver.listen(3000,()=>{
+    console.log('Server is listening on port 3000');
+});
+
+
