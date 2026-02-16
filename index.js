@@ -60,9 +60,10 @@
 
 const http=require('http');
 const fs=require('fs');
+const home=fs.readFileSync('abes.html');
 const myserver=http.createServer((req,res)=>{
-    console.log('server1');
-    res.end('Hello from server1');
+    res.statusCode=200;
+    res.end(home);
 });
 myserver.listen(3000,()=>{
     console.log('Server is listening on port 3000');
