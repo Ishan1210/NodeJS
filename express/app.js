@@ -83,3 +83,41 @@ app.get('/student', (req, res) => {
 app.listen(port, () => {
     console.log(`Server is running at http://localhost:${port}`);
 });
+
+//data create
+app.post('/add-student', (req, res) => {
+    const newStudent = {
+        id: student.length + 1,
+        name: req.body.name,
+        class: req.body.class
+    }
+    student.push(newStudent);
+    res.send('Student added successfully');
+});
+
+//data update
+app.put('/update-student/:id', (req, res) => {
+    const studentId = parseInt(req.params.id);
+    const studentData = student.find(s => s.id === studentId);
+    if (studentData) {
+        studentData.name = req.body.name;
+        studentData.class = req.body.class;
+        res.send('Student updated successfully');
+    } else {
+        res.status(404).send('Student not found');
+    }
+});
+
+//data delete
+app.delete('/delete-student/:id', (req, res) => {
+    const studentId = parseInt(req.params.id);
+    const studentIndex = student.findIndex(s => s.id === studentId);
+    if (studentIndex !== -1) {
+        student.splice(studentIndex, 1);
+        res.send('Student deleted successfully');
+    }   
+    else {
+        res.status(404).send('Student not found');
+    }
+});
+
